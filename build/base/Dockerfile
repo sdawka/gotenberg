@@ -111,3 +111,6 @@ RUN groupadd --gid ${GOTENBERG_USER_GID} gotenberg \
   && useradd --uid ${GOTENBERG_USER_UID} --gid gotenberg --shell /bin/bash --home /gotenberg --no-create-home gotenberg \
   && mkdir /gotenberg \
   && chown gotenberg: /gotenberg
+
+CMD sleep infinity
+
